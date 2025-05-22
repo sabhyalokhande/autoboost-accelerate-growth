@@ -4,21 +4,21 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const timelineItems = [
   {
-    phase: "Phase 1",
+    phase: "1",
     title: "Setup & Strategy",
     description: "Refine branding, launch website, optimize operations",
     weeks: "Weeks 1-4",
     color: "bg-red-600"
   },
   {
-    phase: "Phase 2",
+    phase: "2",
     title: "Build & Expand",
     description: "Forge partnerships, boost visibility without extra spend",
     weeks: "Weeks 5-10",
     color: "bg-red-700"
   },
   {
-    phase: "Phase 3",
+    phase: "3",
     title: "Scale & Grow",
     description: "Run powerful campaigns, explore franchising and eCommerce",
     weeks: "Weeks 11-16",
