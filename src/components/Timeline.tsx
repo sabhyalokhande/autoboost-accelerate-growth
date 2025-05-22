@@ -49,9 +49,9 @@ const Timeline = () => {
           <div className="flex flex-col md:flex-row justify-between gap-8">
             {timelineItems.map((item, index) => (
               <div key={index} className="flex flex-col items-center relative w-full md:w-1/3">
-                {/* Square indicator instead of circle */}
-                <div className={`${item.color} w-16 h-16 flex items-center justify-center text-white font-bold z-10 shadow-lg shadow-red-900/30 rotate-45 border border-red-900/50`}>
-                  <span className="-rotate-45">{item.phase}</span>
+                {/* Circle indicator */}
+                <div className={`${item.color} w-16 h-16 rounded-full flex items-center justify-center text-white font-bold z-10 shadow-lg shadow-red-900/30`}>
+                  {item.phase}
                 </div>
                 
                 {/* Content card */}
