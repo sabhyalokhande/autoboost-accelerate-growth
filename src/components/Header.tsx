@@ -11,28 +11,28 @@ const Header = () => {
   };
   
   return (
-    <header className="sticky top-0 w-full bg-white shadow-sm z-50">
+    <header className="sticky top-0 w-full bg-black shadow-md z-50">
       <div className="container-section py-4 md:py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="#" className="flex items-center">
-              <h1 className="text-xl md:text-2xl font-bold text-autoboost-navy">
-                <span className="text-autoboost-blue">Auto</span>Boost
-                <span className="text-autoboost-blue ml-1">Accelerator</span>
+              <h1 className="text-xl md:text-2xl font-bold text-white">
+                <span className="text-red-600">Auto</span>Boost
+                <span className="text-red-600 ml-1">Accelerator</span>
               </h1>
             </a>
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-autoboost-navy hover:text-autoboost-blue transition-colors">Features</a>
-            <a href="#services" className="text-autoboost-navy hover:text-autoboost-blue transition-colors">Services</a>
-            <a href="#difference" className="text-autoboost-navy hover:text-autoboost-blue transition-colors">Why Us</a>
-            <a href="#timeline" className="text-autoboost-navy hover:text-autoboost-blue transition-colors">Journey</a>
-            <a href="#case-study" className="text-autoboost-navy hover:text-autoboost-blue transition-colors">Case Study</a>
+            <a href="#features" className="text-gray-300 hover:text-red-500 transition-colors">Features</a>
+            <a href="#services" className="text-gray-300 hover:text-red-500 transition-colors">Services</a>
+            <a href="#difference" className="text-gray-300 hover:text-red-500 transition-colors">Why Us</a>
+            <a href="#timeline" className="text-gray-300 hover:text-red-500 transition-colors">Journey</a>
+            <a href="#case-study" className="text-gray-300 hover:text-red-500 transition-colors">Case Study</a>
             <Button 
               asChild
-              className="bg-autoboost-blue text-white hover:bg-autoboost-navy"
+              className="bg-red-600 hover:bg-red-700 text-white"
             >
               <a href="#contact">Contact Us</a>
             </Button>
@@ -40,7 +40,7 @@ const Header = () => {
           
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-autoboost-navy p-2"
+            className="md:hidden text-white p-2"
             onClick={toggleMenu}
             aria-label="Toggle Menu"
           >
@@ -54,46 +54,46 @@ const Header = () => {
         
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 py-4 border-t">
+          <div className="md:hidden mt-4 py-4 border-t border-gray-800">
             <nav className="flex flex-col space-y-4">
               <a 
                 href="#features" 
-                className="text-autoboost-navy hover:text-autoboost-blue transition-colors"
+                className="text-gray-300 hover:text-red-500 transition-colors"
                 onClick={toggleMenu}
               >
                 Features
               </a>
               <a 
                 href="#services" 
-                className="text-autoboost-navy hover:text-autoboost-blue transition-colors"
+                className="text-gray-300 hover:text-red-500 transition-colors"
                 onClick={toggleMenu}
               >
                 Services
               </a>
               <a 
                 href="#difference" 
-                className="text-autoboost-navy hover:text-autoboost-blue transition-colors"
+                className="text-gray-300 hover:text-red-500 transition-colors"
                 onClick={toggleMenu}
               >
                 Why Us
               </a>
               <a 
                 href="#timeline" 
-                className="text-autoboost-navy hover:text-autoboost-blue transition-colors"
+                className="text-gray-300 hover:text-red-500 transition-colors"
                 onClick={toggleMenu}
               >
                 Journey
               </a>
               <a 
                 href="#case-study" 
-                className="text-autoboost-navy hover:text-autoboost-blue transition-colors"
+                className="text-gray-300 hover:text-red-500 transition-colors"
                 onClick={toggleMenu}
               >
                 Case Study
               </a>
               <Button 
                 asChild
-                className="bg-autoboost-blue text-white hover:bg-autoboost-navy w-full"
+                className="bg-red-600 hover:bg-red-700 text-white w-full"
                 onClick={toggleMenu}
               >
                 <a href="#contact">Contact Us</a>

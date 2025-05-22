@@ -32,10 +32,15 @@ const uspPoints = [
 
 const USP = () => {
   return (
-    <section id="difference" className="py-20 bg-gradient-to-r from-autoboost-navy to-[#2A3040] text-white">
-      <div className="container-section">
+    <section id="difference" className="py-20 bg-black text-white relative">
+      {/* Background luxury car image with overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-10 z-0"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1920&auto=format&fit=crop')" }}
+      ></div>
+      <div className="container-section relative z-10">
         <h2 className="section-heading text-center text-white">What Makes Us Different</h2>
-        <p className="section-subheading text-center text-autoboost-silver">
+        <p className="section-subheading text-center text-gray-300">
           We're not just another marketing agency. We're your dedicated growth partner.
         </p>
         
@@ -43,12 +48,12 @@ const USP = () => {
           {uspPoints.map((point, index) => (
             <Card 
               key={index} 
-              className="bg-white/10 backdrop-blur-sm border-none hover:bg-white/20 transition-colors duration-300"
+              className="bg-black/60 backdrop-blur-sm border border-red-900/30 hover:bg-black/80 transition-colors duration-300"
             >
               <CardContent className="p-6 text-center">
                 <div className="text-4xl mb-4">{point.icon}</div>
-                <h3 className="text-xl font-semibold mb-3 text-autoboost-blue">{point.title}</h3>
-                <p className="text-autoboost-silver text-sm">{point.description}</p>
+                <h3 className="text-xl font-semibold mb-3 text-red-500">{point.title}</h3>
+                <p className="text-gray-300 text-sm">{point.description}</p>
               </CardContent>
             </Card>
           ))}
